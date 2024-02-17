@@ -15,7 +15,7 @@
 <body class="container mx-auto ">
     <header>
         <!-- navbar -->
-        <section class="raleway-semibold">
+        <section class="raleway-semibold my-10">
             <div class="">
                 <div class="navbar bg-base-100">
                     <div class="navbar-start">
@@ -29,10 +29,12 @@
                             <a>About</a>
                           </li>
                           <li><a href="">Destination</a></li>
-                          <li><a>Search</a></li>
+                          <li class=""><a>Search</a></li>
+                        
+                        <li class="block md:hidden lg:hidden"><a href=""><button class="btn bg-[#1cd10042] border-[#07830759]">Bus <img src="images/bus-icon.png" alt=""></button></a></li>
                         </ul>
                       </div>
-                      <a class="btn btn-ghost raleway-bold text-3xl">Go To Zoooo</a>
+                      <a class="btn btn-ghost raleway-bold text-xl lg:text-3xl">RS Counter</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1">
@@ -43,7 +45,9 @@
                       </ul>
                     </div>
                     <div class="navbar-end">
-                        <button class="btn bg-[#1cd10042] border-[#07830759]">Bus <img src="images/bus-icon.png" alt=""></button>
+                        <div class="hidden md:block lg:block">
+                            <button class="btn bg-[#1cd10042] border-[#07830759] ">Bus <img src="images/bus-icon.png" alt=""></button>
+                        </div>
                     </div>
                   </div>
             </div>
@@ -51,8 +55,8 @@
     </header>
     <main>
         <!-- banner section -->
-        <section class="p-4">
-            <div class="text-white p-4">
+        <section class="">
+            <div class="text-white p-2">
                 <div class="h-[650px] w-full rounded-lg bg-cover bg-center bg-no-repeat p-4" style="background-image: url('images/banner.png');">
                     <div class="flex items-center justify-center text-center h-full p-4">
                         <div class="space-y-10 p-8">
@@ -66,11 +70,11 @@
         </section>
 
         <!-- best offers section -->
-        <section class="my-20">
+        <section class="my-20 p-2">
             <h1 class="text-center text-4xl raleway-bold my-10">Best offers for you</h1>
-            <div class="flex-row md:flex lg:flex items-center justify-center gap-10">
-                <div class="">
-                    <div class="bg-[#FFBF0F] flex items-center gap-20 p-10 rounded-xl">
+            <div class="flex-row md:flex lg:flex items-center justify-center gap-10 ">
+                <div class="mb-5 md:mb-0 lg:mb-0">
+                    <div class="bg-[#FFBF0F] flex items-center gap-10 md:gap-16 lg:gap-20 p-10 rounded-xl">
                     <div class="">
                         <h1 class="inter-bold font-extrabold text-4xl">15% OFF</h1>
                         <p>on your next purchase</p>
@@ -85,7 +89,7 @@
                 </div>
                 
                 <div class="">
-                    <div class="bg-[#F78C9C] flex gap-20 items-center p-10 rounded-xl">
+                    <div class="bg-[#F78C9C] flex gap-10 md:gap-16 lg:gap-20 items-center p-10 rounded-xl">
                         <div class="">
                             <h1 class="inter-bold  font-extrabold text-4xl">20% OFF</h1>
                             <p>on your next purchase</p>
