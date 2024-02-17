@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cnds -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- css -->
     <link rel="stylesheet" href="styles/style.css">
     <title>P-Paribahan</title>
 </head>
-<body>
-    
+
+<body class="container mx-auto">
+    <header>
+        <!-- navbar -->
+        <section class="raleway-semibold">
+            <div class="">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Home</a></li>
+                          <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                              <li><a>About</a></li>
+                              <li><a>Destination</a></li>
+                            </ul>
+                          </li>
+                          <li><a>Search</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost raleway-bold text-3xl">Go To Zoooo</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a href="">Search</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <button class="btn bg-[#1cd10042] border-[#07830759]">Bus <img src="images/bus-icon.png" alt=""></button>
+                    </div>
+                  </div>
+            </div>
+        </section>`
+    </header>
+    <main>
+        <!-- banner section -->
+        <section>
+            <div class="text-white">
+                <div class="h-[650px] w-full rounded-lg bg-cover bg-center bg-no-repeat" style="background-image: url('images/banner.png');">
+                    <div class="flex items-center justify-center text-center h-full">
+                        <div class="space-y-10">
+                            <h1 class="text-8xl raleway-bold">End-to-End with <span class="text-[#00ff00]">P <br> Paribahan</span></h1>
+                            <p>Yes, you can run unit tests and view the results directly within the app.<br>The integrated testing features allow for a streamlined .</p>
+                            <button id="" class="btn primary_back_color font-bold border-[white]">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- best offers section -->
+        <section class="my-20">
+            <h1 class="text-center text-41xl raleway-bold">Best offers for you</h1>
+            <div class="flex items-center justify-around">
+                <div class="">
+                    <div class="bg-[#FFBF0F] flex items-center gap-10 p-10 rounded-xl">
+                    <div class="">
+                        <h1 class="raleway-bold text-4xl">15% OFF</h1>
+                        <p>on your next purchase</p>
+                        <p class="text-[#0000007a]">use by January 2024</p>
+                    </div>
+                    <div class="border_left">
+                        <h1 class="raleway-bold italic text-3xl1">NEW15</h1>
+                        <p class="text-[#0000007a]">Coupon Code</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div class="bg-[#F78C9C] flex gap-10 items-center p-10 rounded-xl">
+                        <div class="">
+                            <h1 class="raleway-bold text-4xl">20% OFF</h1>
+                            <p>on your next purchase</p>
+                            <p class="text-[#0000007a]"> use by January 2024</p>
+                        </div>
+                        <div class="">
+                            <h1 class="raleway-bold italic text-3xl1">Couple 20</h1>
+                            <p class="text-[#0000007a]">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>

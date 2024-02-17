@@ -12,6 +12,12 @@
     font-weight: 700;
     font-style: normal;
   }
+.raleway-semibold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
 
   /* inter bold */
   .inter-bold {
@@ -21,4 +27,14 @@
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
+  }
+
+  .primary_text_color{
+   color: #00ff00;
+  }
+  .primary_back_color{
+    background-color: #00ff00;
+  }
+  .border_left{
+    border-left: 2px solid dashed;
   }
