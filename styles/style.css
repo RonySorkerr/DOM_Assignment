@@ -60,3 +60,9 @@
   hr{
     border: 1px dashed rgba(189, 189, 189, 0.966);
   }
+
+  table, td, th, tr{
+    padding-inline: 30px;
+    padding-block: 10px;
+    text-align: left;
+  }
