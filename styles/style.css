@@ -56,3 +56,7 @@
     border: 1px dashed red;
     height: 150px;
   }
+
+  hr{
+    border: 1px dashed rgba(253, 240, 214, 0.966);
+  }
