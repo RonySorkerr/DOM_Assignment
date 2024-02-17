@@ -54,9 +54,9 @@
 
   .make_it_dotted1{
     border: 1px dashed red;
-    height: 150px;
+    height: 300px;
   }
 
   hr{
-    border: 1px dashed rgba(253, 240, 214, 0.966);
+    border: 1px dashed rgba(189, 189, 189, 0.966);
   }
