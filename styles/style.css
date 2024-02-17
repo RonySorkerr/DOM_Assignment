@@ -38,3 +38,8 @@
   .border_left{
     border-left: 2px solid dashed;
   }
+
+  .make_it_dotted{
+    border: 1px dashed white;
+    height: 150px;
+  }
