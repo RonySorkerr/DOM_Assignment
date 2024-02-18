@@ -60,6 +60,13 @@
   hr{
     border: 1px dashed rgba(189, 189, 189, 0.966);
   }
+  .longHr{
+    height: 85vh;
+    border: 1px dashed rgb(0, 255, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   table, td, th, tr{
     padding-inline: 30px;
