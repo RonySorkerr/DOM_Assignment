@@ -25,7 +25,7 @@ const arrayOfSeats = [
 const selectedSeats = []
 
 
-for (const seatBtns of allSeatBtns) {
+for (const seatBtns of arrayOfSeats) {
     // push the seats to the array
 
     seatBtns.addEventListener('click', function (e) {
@@ -34,7 +34,8 @@ for (const seatBtns of allSeatBtns) {
         console.log('seat name : ', seatName)
 
         // selected seats
-        selectedSeats.push(seatBtns);
+        selectedSeats.push(seatName);
+        console.log(selectedSeats)
 
         if (selectedSeats.includes(seatBtns > 1)) {
             console.log('already selected');
@@ -47,7 +48,7 @@ for (const seatBtns of allSeatBtns) {
         seatsLeftDisplay.innerText = seatsLeft;
 
         // set background color
-        setBackgroundColor(arrayOfSeats)
+        // setBackgroundColor(arrayOfSeats)
         
 
 
@@ -57,15 +58,10 @@ for (const seatBtns of allSeatBtns) {
 
 // for background color selecting
 function setBackgroundColor(elementId){
-    const element = document.target(elementId);
+    const element = document.getElementById(elementId);
     element.classList.add('bg-[green]');
 }
 
-// for background color removing
-function removeBackgroundColor(elementId){
-    const element = document.getElementById(elementId);
-    element.classList.remove('bg-[#33b933]')
-}
 
 
 // appending the seat ditails
