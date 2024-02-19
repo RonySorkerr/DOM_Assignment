@@ -37,8 +37,10 @@
                                 <li class=""><a>Search</a></li>
 
                                 <li class="block md:hidden lg:hidden"><a href=""><button
-                                            class="btn bg-[#1cd10042] border-[#07830759]">Bus <img src="images/bus-icon.png" alt="">
-                                            <button><a><li>
+                                            class="btn bg-[#1cd10042] border-[#07830759]">Bus <img
+                                                src="images/bus-icon.png" alt="">
+                                            <button><a>
+                                <li>
                             </ul>
                         </div>
                         <a class="btn btn-ghost raleway-bold text-xl lg:text-3xl">RS Paribahan</a>
@@ -73,9 +75,10 @@
                                     class="text-[#00ff00]">RS Paribahan</span></h1>
                             <p>Yes, you can run unit tests and view the results directly within the app.<br>The
                                 integrated testing features allow for a streamlined .</p>
-                                    <a href="#buyNow">
-                                        <button class="mt-8 btn primary_back_color font-bold border-[white] text-black">Buy Tickets</button>
-                                    </a>
+                            <a href="#buyNow">
+                                <button class="mt-8 btn primary_back_color font-bold border-[white] text-black">Buy
+                                    Tickets</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +131,8 @@
             <section id="buyNow">
                 <div class="text-center my-10">
                     <h1 class="inter-bold text-5xl mb-8">P.H Paribahan</h1>
-                    <p class="inter-semibold p-4">Yes, you can run unit tests and view the results directly within the app.
+                    <p class="inter-semibold p-4">Yes, you can run unit tests and view the results directly within the
+                        app.
                         The integrated <br> testing features allow for a streamlined.</p>
                 </div>
             </section>
@@ -290,26 +294,22 @@
                             <table id="seatInfoTable" class="flex justify-center">
                                 <tbody id="seatInfo">
                                     <tr>
-                                        <th>Seat<sup id="totalSeatSelected"></sup></th>
+                                        <th>Seat<sub id="totalSeatSelected"></sub></th>
                                         <th>Class</th>
                                         <th>Price</th>
                                     </tr>
-                                    <tr>
-                                        <td>G4</td>
-                                        <td>Economy</td>
-                                        <td>550</td>
-                                    </tr>
-                                    <tr class="border-[black] border-b-2">
-                                        <td>A1</td>
-                                        <td>Economy</td>
-                                        <td>550</td>
-                                    </tr>
-                                    <tr class="inter-bold">
+
+                                    
+
+                                </tbody>
+                            </table>
+                            <table class="flex justify-center">
+                                <tbody>
+                                    <tr class="inter-bold" style="border-top: 2px dashed black;">
                                         <td>Total Price</td>
                                         <td></td>
                                         <td><span id="totalPrice">1100</span></td>
                                     </tr>
-
                                 </tbody>
                             </table>
                             <div
@@ -353,8 +353,20 @@
                                 <input type="text" placeholder="Enter Your Email ID"
                                     class="input bg-transparent input-bordered w-full " />
                             </label>
-                            <button
-                                class="my-6 btn inter-bold text-base font-extrabold bg-[#33b933] w-full text-white">Next</button>
+                            <!-- <button class="my-6 btn inter-bold text-base font-extrabold bg-[#33b933] w-full text-white">Next</button> -->
+                            <div class="">
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn w-full my-6 bg-green-500" onclick="my_modal_2.showModal()">open modal</button>
+                                <dialog id="my_modal_2" class="modal">
+                                    <div class="modal-box">
+                                        <h3 class="font-bold text-lg">Hello!</h3>
+                                        <p class="py-4">Press ESC key or click outside to close</p>
+                                    </div>
+                                    <form method="dialog" class="modal-backdrop">
+                                        <button>close</button>
+                                    </form>
+                                </dialog>
+                            </div>
                             <div class="flex list-none justify-evenly underline">
                                 <li><a href="">Terms and Conditions</a></li>
                                 <li><a href="">Cencellation Policy</a></li>
