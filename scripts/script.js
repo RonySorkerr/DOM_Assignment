@@ -25,10 +25,10 @@ for (const button of allBtns) {
     button.addEventListener('click', function () {
         if (maxSelect < 4) {
             maxSelect++;
-            button.style.backgroundColor = 'rgb(34 197 94)';
+            button.style.backgroundColor = '#33b933da';
             button.style.color = 'white'
             seatsLeft--;
-            selectedSeat++;
+            selectedSeat++; 
 
             button.disabled = true;
 
