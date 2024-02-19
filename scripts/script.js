@@ -25,8 +25,8 @@ for (const button of allBtns) {
         button.style.color = 'white'
         seatsLeft--;
         selectedSeat++;
-        perSeatPrice +
-            seatsLeftDisplay.innerText = seatsLeft;
+        perSeatTotal += perSeatPrice;
+        seatsLeftDisplay.innerText = seatsLeft;
         seatSelected.innerText = selectedSeat;
         seatSelected.style.backgroundColor = 'rgb(34 197 94)';
         seatSelected.style.color = 'white';
