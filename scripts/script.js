@@ -62,6 +62,7 @@ const coupon20 = 'Couple 20';
 const grandColor = document.getElementById('grandColor');
 const discountPriceParent = document.getElementById('discountClock')
 const discountPriceDispaly = document.getElementById('discountPriceDisplay');
+const grandHr = document.getElementById('grandHr')
 
 
 couponApplyBtn.addEventListener('click', function () {
@@ -74,6 +75,7 @@ couponApplyBtn.addEventListener('click', function () {
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
         grandColor.style.color = '#33b933';
+        grandHr.classList.remove('hidden')
     }
     else if (couponValue === coupon20) {
         const discountAmount = totalPrice * 0.20;
@@ -83,7 +85,7 @@ couponApplyBtn.addEventListener('click', function () {
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
         grandColor.style.color = '#33b933';
-
+        grandHr.classList.remove('hidden')
     }
     else{
         alert("The Coupon You Provided Isn't accurate")
