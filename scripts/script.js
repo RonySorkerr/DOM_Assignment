@@ -28,7 +28,7 @@ for (const button of allBtns) {
             button.style.backgroundColor = '#33b933da';
             button.style.color = 'white'
             seatsLeft--;
-            selectedSeat++; 
+            selectedSeat++;
 
             button.disabled = true;
 
@@ -84,5 +84,8 @@ const nextbtn = document.getElementById('nextbtn');
 numberField.addEventListener('input', function () {
     if (numberField.value.length === 11) {
         nextbtn.disabled = false;
+    }
+    else {
+        nextbtn.disabled = true;
     }
 })
