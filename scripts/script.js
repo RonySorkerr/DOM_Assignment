@@ -54,6 +54,7 @@ for (const button of allBtns) {
             <td>${perSeatPrice}</td>            
         `
             seatInfo.append(selectedSeatsDetails)
+            grandTotalDisplay.innerText= totalPrice;
 
             if (maxSelect === 4) {
                 couponApplyBtn.disabled = false;
@@ -66,7 +67,9 @@ for (const button of allBtns) {
 couponApplyBtn.addEventListener('click', function () {
     const couponValue = couponInput.value;
     if (couponValue === coupon15 || couponValue === coupon20) {
-
+        const discountAmount = totalPrice * 0.15;
+        const grandTotal = totalPrice -discountAmount;
+        grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
     }
 
