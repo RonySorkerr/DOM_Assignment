@@ -339,8 +339,8 @@
                                 <div class="label inter-bold ">
                                     <span class="label-text text-base">Phone Number *</span>
                                 </div>
-                                <input type="text" placeholder="Enter Your Phone Number"
-                                    class="input bg-transparent input-bordered w-full " required />
+                                <input id="numberInput" type="number" placeholder="Enter Your Phone Number"
+                                    class="input bg-transparent input-bordered w-full " disabled required />
                             </label>
                             <label class="form-control w-full mt-6">
                                 <div class="label inter-bold ">
@@ -349,10 +349,9 @@
                                 <input type="text" placeholder="Enter Your Email ID"
                                     class="input bg-transparent input-bordered w-full " />
                             </label>
-                            <!-- <button class="my-6 btn inter-bold text-base font-extrabold bg-[#33b933] w-full text-white">Next</button> -->
+
                             <div class="">
-                                <!-- Open the modal using ID.showModal() method -->
-                                <button class="btn w-full my-6 bg-green-500 text-white text-xl" onclick="my_modal_2.showModal()">Next</button>
+                                <button id="nextbtn" class="btn w-full my-6 bg-green-500 text-white text-base" onclick="my_modal_2.showModal()" disabled>Next</button>
                                 <dialog id="my_modal_2" class="modal">
                                     <div class="flex justify-center">
                                         <div class="modal-box text-center space-y-8">
