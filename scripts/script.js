@@ -74,7 +74,7 @@ const couponApplyBtn = document.getElementById('couponApply');
 const coupon15 = 'NEW15';
 const coupon20 = 'Couple 20';
 
-
+const grandColor = document.getElementById('grandColor');
 
 couponApplyBtn.addEventListener('click', function () {
     const couponValue = couponInput.value;
@@ -83,6 +83,7 @@ couponApplyBtn.addEventListener('click', function () {
         const grandTotal = totalPrice - discountAmount;
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
+        grandColor.style.color = '#33b933'
     }
 
 })
