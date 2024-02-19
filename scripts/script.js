@@ -76,6 +76,7 @@ couponApplyBtn.addEventListener('click', function () {
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
         grandColor.style.color = '#33b933'
+        
     }
 })
 const nextbtn = document.getElementById('nextbtn');
