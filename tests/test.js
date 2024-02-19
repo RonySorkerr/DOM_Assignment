@@ -64,18 +64,20 @@ const grandColor = document.getElementById('grandColor');
 couponApplyBtn.addEventListener('click', function () {
     const couponValue = couponInput.value;
     if (couponValue === coupon15) {
-        const discountAmount = totalPrice * 0.15;
-        const grandTotal = totalPrice - discountAmount;
-        grandTotalDisplay.innerText = grandTotal;
-        couponApplyBtn.parentElement.remove();
-        grandColor.style.color = '#33b933'
+        const discountAmount = totalPrice * 0.15; // Calculate 15% discount
+        const grandTotal = totalPrice - discountAmount; // Subtract discount from total price
+        grandTotalDisplay.innerText = grandTotal; // Update grand total display
+        couponApplyBtn.parentElement.remove(); // Remove apply coupon button
+        grandColor.style.color = '#33b933'; // Change color to indicate success
+        cpn15.classList.remove('hidden'); // Show coupon 15 message
     }
     else if (couponValue === coupon20) {
-        const discountAmount = totalPrice * 0.20;
-        const grandTotal = totalPrice - discountAmount;
-        grandTotalDisplay.innerText = grandTotal;
-        couponApplyBtn.parentElement.remove();
-        grandColor.style.color = '#33b933'
+        const discountAmount = totalPrice * 0.20; // Calculate 20% discount
+        const grandTotal = totalPrice - discountAmount; // Subtract discount from total price
+        grandTotalDisplay.innerText = grandTotal; // Update grand total display
+        couponApplyBtn.parentElement.remove(); // Remove apply coupon button
+        grandColor.style.color = '#33b933'; // Change color to indicate success
+        cpn20.classList.remove('hidden'); // Show coupon 20 message
     }
 })
 const nextbtn = document.getElementById('nextbtn');
