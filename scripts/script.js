@@ -12,6 +12,8 @@ let totalPrice = 0;
 let selectedTotalSeat = 0;
 
 let maxSelect = 0;
+const couponInput = document.getElementById('couponInput');
+
 
 const perSeattotal = document.getElementById('perSeatTotal');
 
@@ -56,13 +58,14 @@ for (const button of allBtns) {
 
             if (maxSelect === 4) {
                 couponApplyBtn.disabled = false;
+                couponInput.disabled = false;
+                couponInput.style.border = '2px solid red'
             }
         }
     })
 };
 
 
-const couponInput = document.getElementById('couponInput');
 const couponApplyBtn = document.getElementById('couponApply');
 const coupon15 = 'NEW15';
 const coupon20 = 'Couple 20';
