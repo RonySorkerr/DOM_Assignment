@@ -74,3 +74,4 @@ couponApplyBtn.addEventListener('click', function () {
     }
 
 })
+
