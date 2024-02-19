@@ -233,7 +233,7 @@
                                 </div>
                                 <!-- seats -->
                                 <div class="grid grid-cols-2 gap-4">
-                                    <button id="A1" class="seat_btn w-fit lg:w-[6em] btn bg-[#33b933]">A1</button>
+                                    <button id="A1" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">A1</button>
                                     <button id="A2" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">A2</button>
                                     <button id="B1" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">B1</button>
                                     <button id="B2" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">B2</button>
@@ -269,7 +269,7 @@
                                 <button id="F3" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">F3</button>
                                 <button id="F4" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">F4</button>
                                 <button id="G3" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">G3</button>
-                                <button id="G4" class="seat_btn w-fit lg:w-[6em] btn bg-[#33b933]">G4</button>
+                                <button id="G4" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">G4</button>
                                 <button id="H3" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">H3</button>
                                 <button id="H4" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">H4</button>
                                 <button id="I3" class="seat_btn w-fit lg:w-[6em] btn bg-[#e9e9e950]">I3</button>
@@ -287,10 +287,10 @@
                         <h1 class="my-4 inter-bold font-extrabold text-xl">Select Your Seat</h1>
                         <div class="bg-[#e9e9e9a2] rounded-xl p-4 ">
 
-                            <table class="flex justify-center">
+                            <table id="seatInfoTable" class="flex justify-center">
                                 <tbody id="seatInfo">
                                     <tr>
-                                        <th>Seat</th>
+                                        <th>Seat<sup id="totalSeatSelected"></sup></th>
                                         <th>Class</th>
                                         <th>Price</th>
                                     </tr>
