@@ -59,7 +59,7 @@ for (const button of allBtns) {
             if (maxSelect === 4) {
                 couponApplyBtn.disabled = false;
                 couponInput.disabled = false;
-                couponInput.style.border = '2px solid red'
+                couponInput.style.border = '2px solid rgb(0, 255, 21)'
             }
         }
     })
