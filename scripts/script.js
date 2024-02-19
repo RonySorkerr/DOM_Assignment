@@ -30,6 +30,8 @@ for (const button of allBtns) {
             seatsLeft--;
             selectedSeat++;
 
+            button.disabled = true;
+
             totalPrice += perSeatPrice;
             perSeattotal.innerText = totalPrice;
 
@@ -75,7 +77,6 @@ couponApplyBtn.addEventListener('click', function () {
         couponApplyBtn.parentElement.remove();
     }
 
-
 })
 
 const nextbtn = document.getElementById('nextbtn');
@@ -83,9 +84,5 @@ const nextbtn = document.getElementById('nextbtn');
 numberField.addEventListener('input', function () {
     if (numberField.value.length === 11) {
         nextbtn.disabled = false;
-    }
-    else{
-        nextbtn.disabled = true;
-
     }
 })
