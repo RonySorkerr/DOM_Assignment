@@ -3,6 +3,9 @@ const seatsLeftDisplay = document.getElementById('seatsLeft');
 const seatSelected = document.getElementById('totalSeatSelected');
 const numberField = document.getElementById('numberInput')
 
+const couponApplyNotif = document.getElementById('maxSeatNot');
+const message = couponApplyNotif.parentElement;
+
 let selectedSeat = 0;
 // appending the seats info
 const seatInfo = document.getElementById('seatInfo')
@@ -57,6 +60,7 @@ for (const button of allBtns) {
             numberField.disabled = false;
 
             if (maxSelect === 4) {
+                message.remove()
                 couponApplyBtn.disabled = false;
                 couponInput.disabled = false;
                 couponInput.style.border = '2px solid rgb(0, 255, 21)'
@@ -69,6 +73,7 @@ for (const button of allBtns) {
 const couponApplyBtn = document.getElementById('couponApply');
 const coupon15 = 'NEW15';
 const coupon20 = 'Couple 20';
+
 
 
 couponApplyBtn.addEventListener('click', function () {
