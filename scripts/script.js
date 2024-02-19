@@ -60,22 +60,29 @@ const couponApplyBtn = document.getElementById('couponApply');
 const coupon15 = 'NEW15';
 const coupon20 = 'Couple 20';
 const grandColor = document.getElementById('grandColor');
+const discountPriceParent = document.getElementById('discountClock')
+const discountPriceDispaly = document.getElementById('discountPriceDisplay');
+
 
 couponApplyBtn.addEventListener('click', function () {
     const couponValue = couponInput.value;
     if (couponValue === coupon15) {
         const discountAmount = totalPrice * 0.15;
+        discountPriceDispaly.innerText = discountAmount;
+        discountPriceParent.classList.remove('hidden')
         const grandTotal = totalPrice - discountAmount;
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
-        grandColor.style.color = '#33b933'
+        grandColor.style.color = '#33b933';
     }
     else if (couponValue === coupon20) {
         const discountAmount = totalPrice * 0.20;
+        discountPriceDispaly.innerText = discountAmount;
+        discountPriceParent.classList.remove('hidden')
         const grandTotal = totalPrice - discountAmount;
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
-        grandColor.style.color = '#33b933'
+        grandColor.style.color = '#33b933';
 
     }
     else{

@@ -302,12 +302,17 @@
                                 </tbody>
                             </table>
                             <hr>
-                            <table class="flex justify-center text-left">
+                            <table class="flex justify-center">
                                 <tbody>
                                     <tr class="inter-bold">
                                         <td >Total Price</td>
-                                        <td class="text-transparent">Economy</td>
+                                        <td class="text-transparent"></td>
                                         <td><span id="perSeatTotal">0</span></td>
+                                    </tr>
+                                    <tr id="discountClock" class="hidden">
+                                        <td>Discounted Price</td>
+                                        <td></td>
+                                        <td id="discountPriceDisplay"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -320,7 +325,7 @@
                                 <button id="couponApply" class="btn bg-[#33b933] hover:bg-[#33b933] text-white  rounded lg:rounded-r-full" disabled>Apply</button>
                             </div>
                             <!-- grand price -->
-                            <table class="grandTable mt-4 lg:mt-0 flex justify-center text-left">
+                            <table class="grandTable mt-4 lg:mt-0 flex justify-center">
                                 <tbody id="grandColor">
                                     <tr class="inter-bold">
                                         <td>Grand Total</td>
