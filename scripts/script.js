@@ -9,12 +9,18 @@ let selectedSeat = 0;
 const seatInfo = document.getElementById('seatInfo')
 const seatClass = 'Economy';
 let perSeatPrice = 550;
+
 let totalPrice = 0;
 let selectedTotalSeat = 0;
 let maxSelect = 0;
 const perSeattotal = document.getElementById('perSeatTotal');
 
-const grandTotalPrice = document.getElementById('grandTotal');
+const grandTotalDisplay = document.getElementById('grandTotal');
+
+const couponInput = document.getElementById('couponInput');
+const couponApplyBtn = document.getElementById('couponApply');
+const coupon15 = 'NEW15';
+const coupon20 = 'Couple 20';
 
 
 const allBtns = document.getElementsByClassName('seat_btn');
@@ -45,11 +51,23 @@ for (const button of allBtns) {
             selectedSeatsDetails.innerHTML = `
             <td>${button.innerText}</td>
             <td>${seatClass}</td>
-            <td>${perSeatPrice}</td>
-            
+            <td>${perSeatPrice}</td>            
         `
             seatInfo.append(selectedSeatsDetails)
+
+            if (maxSelect === 4) {
+                couponApplyBtn.disabled = false;
+            }
         }
     })
+};
 
-}
+
+couponApplyBtn.addEventListener('click', function () {
+    const couponValue = couponInput.value;
+    if (couponValue === coupon15 || couponValue === coupon20) {
+
+        couponApplyBtn.parentElement.remove();
+    }
+
+})

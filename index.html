@@ -288,7 +288,7 @@
 
                     <!-- right side -->
                     <div class="flex flex-grow flex-col lg:w-fit justify-center">
-                        <h1 class="my-4 inter-bold font-extrabold text-xl">Select Your Seat</h1>
+                        <h1 class="my-4 inter-bold font-extrabold text-xl" title="You can not select more than 4 seats at a time">Select Your Seat*</h1>
                         <div class="bg-[#e9e9e9a2] rounded-xl p-4 ">
 
                             <table id="seatInfoTable" class="flex justify-center">
@@ -298,27 +298,22 @@
                                         <th>Class</th>
                                         <th>Price</th>
                                     </tr>
-
-                                    
-
                                 </tbody>
                             </table>
                             <hr>
                             <table class="flex justify-center">
                                 <tbody>
-                                    <tr class="inter-bold ]">
+                                    <tr class="inter-bold">
                                         <td >Total Price</td>
                                         <td class="text-transparent">Economy</td>
                                         <td><span id="perSeatTotal">0</span></td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <div
-                                class="join flex flex-col lg:flex-row mx-auto items-center justify-center space-y-4 lg:space-y-0">
-                                <input
-                                    class="input input-bordered bg-transparent lg:bg-transparent rounded-2xl lg:rounded-l-xl lg:rounded-r-none w-full lg:w-fit"
+                            <div class="join flex flex-col lg:flex-row mx-auto items-center justify-center space-y-4 lg:space-y-0">
+                                <input id="couponInput" class="input input-bordered bg-transparent lg:bg-transparent rounded-2xl lg:rounded-l-xl lg:rounded-r-none w-full lg:w-fit"
                                     placeholder="Have any Coupon?" />
-                                <button class="btn bg-[#33b933] rounded lg:rounded-r-full" disabled>Apply</button>
+                                <button id="couponApply" class="btn bg-[#33b933] hover:bg-[#33b933] text-white  rounded lg:rounded-r-full" disabled>Apply</button>
                             </div>
                             <!-- grand price -->
                             <table class="grandTable mt-4 lg:mt-0 flex justify-center">
@@ -326,7 +321,7 @@
                                     <tr class="inter-bold">
                                         <td>Grand Total</td>
                                         <td style="color: transparent;">Economy</td>
-                                        <td id="grandTotal"></td>
+                                        <td id="grandTotal">0</td>
                                     </tr>
                                 </tbody>
                             </table>
