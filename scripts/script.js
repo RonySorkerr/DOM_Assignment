@@ -21,7 +21,7 @@ const allBtns = document.getElementsByClassName('seat_btn');
 
 for (const button of allBtns) {
     // const seatNumber = button.innerText;
-    
+
     button.addEventListener('click', function () {
         if (maxSelect < 4) {
             maxSelect++;
@@ -29,18 +29,18 @@ for (const button of allBtns) {
             button.style.color = 'white'
             seatsLeft--;
             selectedSeat++;
-            
+
             totalPrice += perSeatPrice;
             perSeattotal.innerText = totalPrice;
-            
+
             seatsLeftDisplay.innerText = seatsLeft;
             seatSelected.innerText = selectedSeat;
             seatSelected.style.backgroundColor = 'rgb(34 197 94)';
             seatSelected.style.color = 'white';
             seatSelected.style.padding = '4px';
             seatSelected.style.borderRadius = '10px'
-            
-            
+
+
             const selectedSeatsDetails = document.createElement('tr');
             selectedSeatsDetails.innerHTML = `
             <td>${button.innerText}</td>
@@ -48,10 +48,10 @@ for (const button of allBtns) {
             <td>${perSeatPrice}</td>            
             `
             seatInfo.append(selectedSeatsDetails)
-            grandTotalDisplay.innerText= totalPrice;
+            grandTotalDisplay.innerText = totalPrice;
 
-            numberField.disabled= false;
-            
+            numberField.disabled = false;
+
             if (maxSelect === 4) {
                 couponApplyBtn.disabled = false;
             }
@@ -69,7 +69,7 @@ couponApplyBtn.addEventListener('click', function () {
     const couponValue = couponInput.value;
     if (couponValue === coupon15 || couponValue === coupon20) {
         const discountAmount = totalPrice * 0.15;
-        const grandTotal = totalPrice -discountAmount;
+        const grandTotal = totalPrice - discountAmount;
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
     }
@@ -78,8 +78,8 @@ couponApplyBtn.addEventListener('click', function () {
 
 const nextbtn = document.getElementById('nextbtn');
 
-numberField.addEventListener('input', function(){
-    if(numberField.value.length>=11){
-        nextbtn.disabled= false;
+numberField.addEventListener('input', function () {
+    if (numberField.value.length === 11) {
+        nextbtn.disabled = false;
     }
 })
