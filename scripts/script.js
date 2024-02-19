@@ -9,7 +9,7 @@ let selectedSeat = 0;
 const seatInfo = document.getElementById('seatInfo')
 const seatClass = 'Economy';
 let perSeatPrice = 550;
-let perSeatTotal = 0;
+let totalPrice = 0;
 
 const perSeattotal = document.getElementById('perSeatTotal');
 
@@ -25,7 +25,10 @@ for (const button of allBtns) {
         button.style.color = 'white'
         seatsLeft--;
         selectedSeat++;
-        perSeatTotal += perSeatPrice;
+
+        totalPrice += perSeatPrice;
+        perSeattotal.innerText = totalPrice;
+
         seatsLeftDisplay.innerText = seatsLeft;
         seatSelected.innerText = selectedSeat;
         seatSelected.style.backgroundColor = 'rgb(34 197 94)';
