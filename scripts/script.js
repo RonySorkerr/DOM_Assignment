@@ -59,6 +59,7 @@ for (const button of allBtns) {
     })
 };
 
+
 const couponInput = document.getElementById('couponInput');
 const couponApplyBtn = document.getElementById('couponApply');
 const coupon15 = 'NEW15';
