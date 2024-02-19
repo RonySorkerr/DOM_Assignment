@@ -57,8 +57,15 @@ const coupon20 = 'Couple 20';
 const grandColor = document.getElementById('grandColor');
 couponApplyBtn.addEventListener('click', function () {
     const couponValue = couponInput.value;
-    if (couponValue === coupon15 || couponValue === coupon20) {
+    if (couponValue === coupon15) {
         const discountAmount = totalPrice * 0.15;
+        const grandTotal = totalPrice - discountAmount;
+        grandTotalDisplay.innerText = grandTotal;
+        couponApplyBtn.parentElement.remove();
+        grandColor.style.color = '#33b933'
+    }
+    else if(couponValue === coupon20){
+        const discountAmount = totalPrice *0.20;
         const grandTotal = totalPrice - discountAmount;
         grandTotalDisplay.innerText = grandTotal;
         couponApplyBtn.parentElement.remove();
