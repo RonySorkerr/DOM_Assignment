@@ -67,7 +67,7 @@ couponApplyBtn.addEventListener('click', function () {
 })
 const nextbtn = document.getElementById('nextbtn');
 numberField.addEventListener('input', function () {
-    if (numberField.value.length === 11) {
+    if (numberField.value.length > 1) {
         nextbtn.disabled = false;
     }
     else {
